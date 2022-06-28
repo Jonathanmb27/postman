@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "2544977f-c62f-4ec3-a1c9-a0cb038cfd00",
+		"name": "yanqui",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10880786"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "yanqui deposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"dni\":5656565,\r\n    \"phoneNumberOwner\":985489759,\r\n    \"phoneNumberClient\":986598547,\r\n    \"amount\":100,\r\n    \"operationType\":2\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8085/consumptions/yanqui",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"consumptions",
+						"yanqui"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

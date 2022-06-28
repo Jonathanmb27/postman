@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "c392d714-cfe8-4319-80cf-f5f7908092b3",
+		"name": "p2p",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10880786"
+	},
+	"item": [
+		{
+			"name": "create offer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dni\":46092622,\r\n    \"phoneNumber\":56985487,\r\n    \"email\":\"@gmail.com\",\r\n    \"payMode\":1,\r\n    \"typeOperation\":2,\r\n    \"amountBootcoin\":60\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8086/ProductOffer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"ProductOffer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all offer",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "buy coins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/productoffers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"productoffers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

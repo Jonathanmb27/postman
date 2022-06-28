@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "14cef27e-51c3-4520-b247-51c188dc029e",
+		"name": "service-conusmo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10880786"
+	},
+	"item": [
+		{
+			"name": "created",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":\"45445455454\",\r\n    \"cardNumber\":888,\r\n    \"productType\":1,\r\n    \"accountType\":1,\r\n    \"transactionType\":50,\r\n    \"consumptionDetails\":\"hola\",\r\n     \"total\":1000\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/consumptions",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consumptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user dni",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

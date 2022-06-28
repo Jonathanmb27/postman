@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "78fac7ee-935c-44b2-876d-dec3a4748981",
+		"name": "service-product v 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10880786"
+	},
+	"item": [
+		{
+			"name": "create product person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"userId\":\"62b35c1b798a8c7aba1a3805\",\r\n    \"clientType\":1,\r\n    \"productType\":1,\r\n    \"accountType\":1,\r\n    \"cardNumber\":545879655458965,\r\n    \"amount\":1000,\r\n    \"maxNumberTransactions\":10,\r\n    \"minAmountMonth\":5000,\r\n    \"creditLimit\":0\r\n\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8083/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create product company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8083/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "find by client",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create bootcoin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"salePrice\":120,\r\n    \"purchasePrice\":100\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8083/bootcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"bootcoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update bootcoin",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8083/bootcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"bootcoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get bootcoin",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
